@@ -1,0 +1,78 @@
+.containerr{
+    margin-top: 50px;
+    background-image: url('resources/c_bg1.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-size: cover;
+}
+.contact_section{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 100px;
+}
+
+
+.form_section input,textarea{
+    margin-top: 20px;
+    display: block;
+    padding: 16px;
+    width: 500px;
+    outline: none;
+    border: 2px dotted ;
+}
+.submit_btn{
+    border-radius: 30px;
+    border:2px solid #fb2056;
+    /* background-color: rgb(223, 111, 129); */
+    background-color:#fb2056;
+    color: white;
+    padding: 10px;
+    margin-top: 18px;
+    width: 120px;
+    font-size: 1rem;
+    font-weight: 500px;
+    font-weight: bold;
+}
+.info_section i{
+    background-color:#161e2d;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+   width: 30px;
+   text-align: center;
+}
+.margin{
+    margin-left: 12px;
+}
+.color{
+    color:#fb2056;
+}
+
+
+
+
+
+/* ***********************************************responsive************************************************** */
+@media screen and (max-width: 768px){
+    .contact_section{
+        grid-template-columns: 1fr;
+    }
+    .form_section input,textarea{
+        width: 100%;
+        
+    }
+    .container{
+        background-color: white;
+        background-image: none;
+    }
+    .info_section h1{
+        margin-top: 50px;
+    }
+    .containerr{
+        background-image: url('resources/bg4444.jpeg');
+        background-position: center;
+        background-size: cover;
+       width:100% ;
+    }
+}

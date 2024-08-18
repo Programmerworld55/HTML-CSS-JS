@@ -1,0 +1,44 @@
+.main_heading{
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+    
+}
+.head1{
+    color: black;
+  
+}
+.head1 p{
+    text-align: center;
+    margin-top: 18px;
+}
+
+.line{
+    
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    width: 30%;
+    color: #fb2056;
+    line-height: 12px;
+    height: 2px;
+    background-color: #fb2056;
+    margin-top: 12px;
+}
+
+
+
+
+
+/* ************************************************************responsiveness******************************/
+@media screen and (max-width: 768px){
+.container{
+    background-color: white;
+    background-image: none;
+}
+}

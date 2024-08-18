@@ -1,0 +1,269 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.custom-navbar {
+    background-color: #161e2d;
+    color: white;
+}
+.custom-navbar .navbar-nav .nav-link {
+    color: white;
+}
+.custom-navbar .navbar-toggler-icon {
+    background-color: white;
+}
+
+
+.logo{
+    width: 100px;
+    height: 100px;
+    background-image: url('resources/about\ image\ 4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: black;
+}
+
+.logo{
+    transition: all linear;
+    animation: rotate 6s linear infinite;
+    color: blue;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.colour{
+    color: black;
+}
+
+/* ******************************************************************************************* */
+.hero_section {
+    width: auto;
+    height: 522px;
+    border: 2px solid black;
+    margin: 0px;
+    padding: 0px;
+}
+
+.containerr{
+    height: 522px;
+    display: flex;
+    flex-direction: column;
+    background-color: brown;
+    align-items: center;
+    justify-content: center;
+    
+    background-image: url('resources/bg1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-size: cover;
+}
+.heading1 h1{
+    font-size: 2rem;
+    color: white;
+    font-weight: 500px;
+    margin-top: 12px;
+}
+.heading2 h2{
+    font-size: 1.7rem;
+    color: white;
+    font-weight: 500px;
+    margin-top: 12px;
+}
+.button button{
+    border-radius: 30px;
+    border:2px solid black;
+    /* background-color: rgb(223, 111, 129); */
+    background-color: #161e2d;
+    color: white;
+    padding: 15px;
+    margin-top: 18px;
+    width: 200px;
+    font-size: 1rem;
+    font-weight: 500px;
+    font-weight: bold;
+}
+/* *****************************Post section**************************************************** */
+.quote{
+    width: 100%;
+    height: 150px;
+    background-color:aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.quote p{
+    font-size: 1rem;
+}
+
+.post_section{
+    /* background-color: blueviolet; */
+    height: 70px;
+}
+.post_section h1{
+    font-size: 1rem;
+}
+.posts{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr)); */
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.post{
+    padding:50px;
+}
+
+.video_bg {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 500px; 
+    background-color: aqua;
+   background-image: url('resources/2.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.content {
+    text-align: right; 
+    margin-right: 140px;
+    color: white;
+    font-weight: 500px;
+    font-size: 1.5rem;
+
+}
+.content h1{
+    font-size: 2rem;
+}
+
+.button {
+    margin-top: 20px;
+} 
+/* *********************************************************************************************** */
+.services_cont{
+    margin-top: 30px;
+
+}
+.our_services{
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns:1fr 1fr 1fr;
+    /* grid-template-rows: 1fr; */
+    gap: 12px;
+    margin-left: 20px;
+}
+.service{
+    justify-content: space-between;
+    position: relative;
+    opacity: 0;
+    animation: fadeInDown 2s ease-out forwards;
+}
+.service h1{
+    font-size: 1.2rem;
+}
+.right{
+    justify-self: end
+}
+
+
+
+
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* ************************************************************************************************ */
+.contentt{
+    margin-top: 100px;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background: black;
+    color: white;
+}
+
+
+
+
+/* ********************************************************************************************** */
+
+@media screen and (max-width: 768px){
+    .container{
+        background-image: url('resources/3.jpg');
+        background-position: center;
+        background-size: cover;
+        background-size: cover;
+    }
+    .heading1 h1{
+        font-size: 1rem;
+    }
+
+.heading2 h2{
+    font-size: 0.8rem;
+}
+.posts{
+    grid-template-columns: 1fr;
+}
+
+
+.content {
+    color: white;
+    font-weight: 500px;
+    font-size:0.8rem;
+
+
+}
+.content p{
+    text-align: center;
+    color: blue;
+    background-color: black;
+}
+
+.button {
+    margin-top: 10px;
+} 
+.our_services{
+    grid-template-columns:1fr ;
+  
+}
+.service{
+    justify-self: center
+
+}
+.service h1{
+    text-align: center;
+}
+}
+
+
+
+/* ********************about styling*********************** */
+
+
+/* ******************************************************************************** */
+.add_margin{
+    margin-top: 100px;
+}
